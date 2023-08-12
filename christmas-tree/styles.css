@@ -1,0 +1,68 @@
+.landscape {
+    width: 100vw;
+    height: 100vh;
+}
+
+.tree {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+@keyframes deco-fall {
+    0%   {}
+    20%  {top: 100%}
+    40%  {top: 90%}
+    60%  {top: 95%}
+    80%  {top: 90%}
+    100% {top: 95%}
+  }
+
+.deco {
+    position: absolute;
+}
+
+.tree:hover .deco{
+    animation-name: deco-fall;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.deco:hover {
+    transform: scaleX(2);
+    transition: 2s ease;
+}
+
+#red-deco {
+    top: 55%;
+    left: 10%;
+}
+
+#blue-deco {
+    top: 25%;
+    left: 25%;
+}
+
+#green-deco {
+    top: 35%;
+    left: 40%;
+}
+
+#pink-deco {
+    top: 10%;
+    left: 55%;
+}
+
+#orange-deco {
+    top: 30%;
+    left: 70%;
+}
+
+#darkblue-deco {
+    top: 35%;
+    left: 85%;
+}
+
+.red-deco:hover {
+    transform: scale(1.5);
+}
